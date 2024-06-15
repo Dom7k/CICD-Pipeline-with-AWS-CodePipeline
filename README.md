@@ -1,37 +1,47 @@
-# City Direction Web App Deployment on AWS
+# Deploying a Static Web Application with CI/CD on AWS 🚀
 
-Welcome to the City Direction Web App Deployment project repository! This repository contains the code and resources needed to deploy a static web application providing directions between cities on Amazon Web Services (AWS). 
+This project is a CI/CD pipeline for a static web application that offers city-to-city directions.
 
-## How to Clone this Repository
+## AWS Services Utilized 📦
 
-To clone this repository to your local machine, follow these steps:
+- 🔸 **AWS CodePipeline**
+- 🔸 **AWS CodeCommit**
+- 🔸 **AWS CodeBuild**
+- 🔸 **AWS CodeDeploy**
+- 🔸 **Amazon S3**
+- 🔸 **Amazon EC2**
+
+
+## Architecture Diagram
+
+![Architecture Diagram](https://github.com/Dom7k/CICD-Pipeline-with-AWS-CodePipeline/blob/main/architecture%20diagram.gif)
+
+## Deployment Process 🪂
+
+1. **Version Control Setup:**
+   - Push source files to AWS CodeCommit, setting up a repository for version control.
+
+2. **Build Automation:**
+   - Configure AWS CodeBuild with build scripts to automate the build process whenever changes are pushed to the repository and save the build artifacts to an S3 bucket.
+
+3. **Deployment Automation:**
+   - Create deployment scripts and configure AWS CodeDeploy to automate the deployment process to an EC2 instance.
+
+4. **Pipeline Automation:**
+   - Set up AWS CodePipeline to integrate the version control, build, and deployment processes, creating a seamless CI/CD pipeline.
+
+## Key Learnings ✨
+
+- Implementing the CI/CD pipeline with AWS CodePipeline streamlines the build and deployment process, enhancing efficiency and reducing operational overhead.
+
+## How to Clone This Project
+
+To clone this project, follow these steps:
 
 1. Open your terminal or command prompt.
-2. Navigate to the directory where you want to clone the repository.
-3. Use the following command to clone the repository:
+2. Run the following command to clone the repository:
 
-```bash
-git clone (https://github.com/ansarshaik965/AWS_DEVOPS_CICD)
-```
+   ```bash
+   git clone https://github.com/Dom7k/CICD-Pipeline-with-AWS-CodePipeline.git
+   cd CICD-Pipeline-with-AWS-CodePipeline
 
-
-
-## Full Project Demo
-
-For a detailed walkthrough and demonstration of deploying the City Direction Web App on AWS, you can watch the full project video [here](https://www.appopener.com/yt/l7kdeo6ka).
-
-## Project Structure
-
-- Part-1: CodeCommit Setup
-  - Contains scripts and resources for setting up version control using AWS CodeCommit.
-
-- Part-2: CodeBuild Implementation
-  - Includes configurations and files for automating builds with AWS CodeBuild.
-
-- Part-3: CodeDeploy and Pipeline Automation
-  - Contains deployment scripts and instructions for automating deployments with AWS CodeDeploy and CodePipeline.
-
-
-Feel free to contribute to this project by submitting pull requests or opening issues.
-
-Happy coding! 🚀
